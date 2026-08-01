@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ROYAL-SCRIPT - L'outil ultime de maintenance et d'automatisation pour Windows.">
+    <title>ROYAL-SCRIPT | by SERI TAGRO ROY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="animated-bg"></div>
+    <div class="scanlines"></div>
+
+    <header>
+        <div class="logo-group">
+            <div class="logo glitch-element" data-text="ROYAL-SCRIPT">ROYAL-SCRIPT<span>_</span></div>
+            <div class="logo-tagline">ROY INDUSTRIE</div>
+        </div>
+        <nav>
+            <!-- Ancien lien : https://github.com/seritagroroy-oss/Script-Windows -->
+            <a href="https://github.com/seritagroroy-oss/Royal-Script-Windows" target="_blank" class="github-link sound-hover">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 id="typewriter-text"></h1>
+            <p class="subtitle">L'outil CMD ultime pour régler vos problèmes courants sur Windows.</p>
+            <div class="cta-container">
+                <!-- Ancien lien : https://github.com/seritagroroy-oss/Script-Windows/raw/main/ROYAL-SCRIPT.zip -->
+                <a href="https://github.com/seritagroroy-oss/Royal-Script-Windows/raw/main/ROYAL-SCRIPT.zip" id="download-btn" class="btn-download sound-click">
+                    <span class="btn-text">TÉLÉCHARGER LE SCRIPT</span>
+                    <span class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </span>
+                </a>
+                <p class="version">Version : 1.0 | Poids : ~2.5 MB</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2 class="glitch-element" data-text="> FONCTIONNALITÉS_">> FONCTIONNALITÉS_</h2>
+            <div class="grid">
+                <div class="card tilt-element sound-hover">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        </div>
+                        <h3>Maintenance Système</h3>
+                        <p>Scans approfondis (SFC, CHKDSK, DISM) et réparation automatique de vos fichiers corrompus Windows.</p>
+                    </div>
+                </div>
+                <div class="card tilt-element sound-hover">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                        </div>
+                        <h3>Gestion Disques</h3>
+                        <p>Réparation avancée de vos disques durs internes, externes, clés USB et cartes mémoires.</p>
+                    </div>
+                </div>
+                <div class="card tilt-element sound-hover">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                        </div>
+                        <h3>Réseau & Sécurité</h3>
+                        <p>Réinitialisation complète des cartes réseaux, récupération de clés Wi-Fi sauvegardées.</p>
+                    </div>
+                </div>
+                <div class="card tilt-element sound-hover">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        </div>
+                        <h3>Mises à jour</h3>
+                        <p>Mise à jour globale de vos applications et du système en une seule commande (winget).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal Section -->
+        <section class="terminal-section">
+            <h2 class="glitch-element" data-text="> ESSAYEZ LE TERMINAL_">> ESSAYEZ LE TERMINAL_</h2>
+            <p class="terminal-desc">Tapez une commande pour voir ROYAL-SCRIPT en action.</p>
+            <div class="terminal-window">
+                <div class="terminal-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">C:\Windows\System32\cmd.exe — ROYAL-SCRIPT</span>
+                </div>
+                <div id="terminal-output">
+                    <p><span class="prompt">C:\Users\PC></span> <span class="cmd-hint">Tapez une commande ci-dessous...</span></p>
+                </div>
+                <div class="terminal-input-row">
+                    <span class="prompt">C:\Users\PC></span>
+                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="royal --help">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>>_ Conçu par <strong>SERI TAGRO ROY</strong> — ROY INDUSTRIE</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
