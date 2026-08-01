@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function setPromptHint(hint) {
         const el = document.querySelector('.terminal-input-row .prompt');
         if (el) el.textContent = hint;
-        terminalInput.focus();
+        terminalInput.focus({ preventScroll: true });
     }
 
     // ── Show welcome / login screen ───────────────────────────────
