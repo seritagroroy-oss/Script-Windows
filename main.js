@@ -62,18 +62,18 @@ document.addEventListener("DOMContentLoaded", () => {
     async function animateAuthorText() {
         if (!authorElement) return;
         while (true) {
-            authorElement.innerHTML = "";
+            authorElement.textContent = "";
             // Type
             for (let j = 0; j < authorText.length; j++) {
-                authorElement.innerHTML += authorText.charAt(j);
-                await new Promise(r => setTimeout(r, 80));
+                authorElement.textContent += authorText.charAt(j);
+                await new Promise(r => setTimeout(r, 120));
             }
             // Wait
             await new Promise(r => setTimeout(r, 3000));
             // Erase
             for (let j = authorText.length; j >= 0; j--) {
-                authorElement.innerHTML = authorText.substring(0, j);
-                await new Promise(r => setTimeout(r, 40));
+                authorElement.textContent = authorText.substring(0, j);
+                await new Promise(r => setTimeout(r, 60));
             }
             // Wait before restart
             await new Promise(r => setTimeout(r, 1500));

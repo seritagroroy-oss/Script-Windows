@@ -129,8 +129,9 @@ header {
 
 .logo-group {
     display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
 }
 
 .logo {
