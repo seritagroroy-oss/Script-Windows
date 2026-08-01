@@ -140,12 +140,14 @@ header {
     text-shadow: 0 0 10px var(--primary-glow);
 }
 
-.logo-tagline {
-    font-size: 0.7rem;
-    color: rgba(0, 255, 0, 0.55);
-    letter-spacing: 0.25em;
+.author-tagline {
+    font-size: 0.8rem;
+    color: rgba(0, 255, 0, 0.7);
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 .logo span { animation: blink 1s step-end infinite; }

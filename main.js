@@ -54,6 +54,34 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(typeWriter, 500);
 
     // ============================================================
+    // 2.B AUTHOR TYPEWRITER EFFECT
+    // ============================================================
+    const authorText = "(Developpé par SERI TAGRO ROY)";
+    const authorElement = document.getElementById("author-typewriter-text");
+    
+    async function animateAuthorText() {
+        if (!authorElement) return;
+        while (true) {
+            authorElement.innerHTML = "";
+            // Type
+            for (let j = 0; j < authorText.length; j++) {
+                authorElement.innerHTML += authorText.charAt(j);
+                await new Promise(r => setTimeout(r, 80));
+            }
+            // Wait
+            await new Promise(r => setTimeout(r, 3000));
+            // Erase
+            for (let j = authorText.length; j >= 0; j--) {
+                authorElement.innerHTML = authorText.substring(0, j);
+                await new Promise(r => setTimeout(r, 40));
+            }
+            // Wait before restart
+            await new Promise(r => setTimeout(r, 1500));
+        }
+    }
+    setTimeout(animateAuthorText, 2500);
+
+    // ============================================================
     // 3. SCROLL ANIMATION FOR CARDS
     // ============================================================
     const cards = document.querySelectorAll('.card');
